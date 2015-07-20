@@ -1,5 +1,5 @@
 {
-  "name": "codemetrics-input-file",
+  "name": "codemetrics-parser-file",
   "version": "0.1.0",
   "description": "Process files for codemetrics",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxdow/codemetrics-input-file.git"
+    "url": "git+https://github.com/maxdow/codemetrics-parser-file.git"
   },
   "keywords": [
     "metrics"
@@ -16,7 +16,7 @@
   "author": "Maxime Warnier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maxdow/codemetrics-input-file/issues"
+    "url": "https://github.com/maxdow/codemetrics-parser-file/issues"
   },
-  "homepage": "https://github.com/maxdow/codemetrics-input-file#readme"
+  "homepage": "https://github.com/maxdow/codemetrics-parser-file#readme"
 }
