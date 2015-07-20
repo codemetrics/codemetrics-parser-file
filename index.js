@@ -8,15 +8,17 @@ const defaultOptions = {
     ignore: "node_modules/**"
 };
 
-module.exports = function(options) {
+module.exports = function(options = {}) {
 
-    console.log("File Input Parser loaded ", sources);
+    console.log("File Input Parser loaded ");
 
     Object.assign(options,defaultOptions);
 
-    this.run = function(input){
-    //TODO check input
-      return glob.sync(sources, options).map(processFile)
+    return {
+        run : (input) => {
+            //TODO check input
+            return glob.sync(input, options).map(processFile)
+        }
     }
 }
 
