@@ -10,8 +10,6 @@ const defaultOptions = {
 
 module.exports = function(options = {}) {
 
-    console.log("File Input Parser loaded ");
-
     Object.assign(options,defaultOptions);
 
     return {
