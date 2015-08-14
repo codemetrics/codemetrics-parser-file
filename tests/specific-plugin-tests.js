@@ -4,10 +4,12 @@ var test = require("tape");
 
 var myPluginInstance = require("../src")();
 
-test("should return input",function(t){
-  var myInput = "blablabla";
+var result = myPluginInstance.run("tests/samples/*");
 
-  t.equal(true,true);
+test("should load all files in samples",function(t){
+  console.log(result);
+
+  t.equal(result.length,2);
 
   t.end();
 
