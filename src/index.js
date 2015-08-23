@@ -13,12 +13,12 @@ module.exports = function(options = {}) {
     Object.assign(options,defaultOptions);
 
     return {
-        run : (input) => {
+        run : function(input) {
             //TODO check input
-            return glob.sync(input, options).map(processFile)
+            return glob.sync(input, options).map(processFile);
         }
-    }
-}
+    };
+};
 
 
 
