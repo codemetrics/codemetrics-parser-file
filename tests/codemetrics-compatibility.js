@@ -1,12 +1,10 @@
-"use strict";
-
-var test = require("tape");
-var myPlugin = require("../src");
+const test = require("tape");
+import myPlugin from"../src";
 
 test("the plugin module should expose a function",function(t){
 
   t.doesNotThrow(function(){
-    var myPluginInstance = myPlugin();
+    myPlugin();
   });
 
   t.end();
@@ -15,7 +13,7 @@ test("the plugin module should expose a function",function(t){
 
 test("should have a 'run' public function", function (t) {
 
-  var myPluginInstance = myPluginInstance = myPlugin();
+  const myPluginInstance = myPlugin();
 
   t.equal(typeof myPluginInstance.run,"function","run exist and it's a function");
 

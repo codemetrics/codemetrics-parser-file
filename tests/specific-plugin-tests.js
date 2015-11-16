@@ -1,10 +1,8 @@
-"use strict";
+const test = require("tape");
 
-var test = require("tape");
+const myPluginInstance = require("../src")();
 
-var myPluginInstance = require("../src")();
-
-var result = myPluginInstance.run("tests/samples/*");
+const result = myPluginInstance.run("tests/samples/*");
 
 test("should load all files in samples",function(t){
   console.log(result);
